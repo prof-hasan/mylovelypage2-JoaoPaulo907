@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: beige;
+    font-family: 'Comic Sans MS', cursive;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("imgs/cabecalho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 200%;
+    margin: 5px 0;
+    color: gold;
+    text-shadow: 2px 2px black;
+}
+
+header nav {
+    background-image: linear-gradient(45deg, rgb(45, 45, 45), gray, gray, rgb(45, 45, 45));
+    padding: 2px 0;
+    border: 2px solid orange;
+    border-left: none;
+    border-right: none;
+}
+
+header nav ul {
+    display: inline;
+    padding: 2px 4px;
+}
+
+header nav li {
+    list-style-type: circle;
+    display: inline;
+    padding-right: 8px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+main {
+    flex-grow: 1;
+    background-color: beige;
+    text-align: center;
+}
+
+#biohazard {
+    color: blue;
+}
+
+#biohazard:hover {
+    color: rgb(30, 135, 255);
+}
+
+ol {
+    margin: 0 30%;
+    text-align: left;
+}
+
+ol img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#infos {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#autor p {
+    text-align: left;
+    margin: 0;
+}
+
+#infos li {
+    text-align: left;
+}
+
+#infos li a {
+    color: blue;
+}
+
+#infos li a:hover {
+    color: rgb(30, 135, 255);
+}
+
+#vitoria {
+    visibility: hidden;
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+
+button {
+    background-color: orange;
+    font-family: 'Comic Sans MS';
+    font-size: 120%;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 185, 55);
+    transform: scale(1.05);
+    transition: all 50ms ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: all 50ms ease;
+}
+
+#pts-atual {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#confirmar {
+    margin: 10px 40%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+footer {
+    height: 15vh;
+    background-color: rgb(75, 75, 75);
+    border-top: 2px solid orange;
+}
